@@ -110,5 +110,23 @@ shell函数<br/>
 创建命令别名
 
 ####7 重定向
+标准输入<br/>		<
+标准输出<br/>		>
+标准错误<br/>		&>     2>&1
+
+23. 管道线|
+command1|command2<br/>
+command1输出作为command2的输入<br/>
+
+24. 过滤器
+sort 排序<br/>
+uniq 去掉重复内容<br/>
+wc 打印行、字和字节数<br/>
+grep 打印匹配行<br/>
+head 打印文件开头部分<br/>
+tail 打印文件结尾部分<br/>
+tee 从stdin读取数据，同时输出到stdout和文件<br/>
+
+
 
 
