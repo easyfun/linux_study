@@ -39,31 +39,31 @@ cd -	进入上一个工作目录
 ..上一级目录
 
 ####4 探究操作系统
-9. ls
+1. ls
 查看目录/文件信息
 
-10. file
+2. file
 查看文件类型<br/>
 在Linux下，扩展名不决定文件的类型，辅助人们区分文件类型
 
-11. less/cat
+3. less/cat
 less分页查看文件内容<br/>
 cat一次显示文件全部内容
 
 ####5 操作文件和目录
-12. cp
+4. cp
 复制文件和目录
 
-13. mv
+5. mv
 移动/重命名文件和目录
 
-14. mkdir
+6. mkdir
 创建目录
 
-15. rm
+7. rm
 删除文件和目录
 
-16. ln
+8. ln
 创建硬链接和符号链接(软链接)
 
 硬链接：是档案的别名<br/>
@@ -91,22 +91,22 @@ shell内置命令，cd<br/>
 shell函数<br/>
 命令别名<br/>
 
-17. type
+1. type
 说明怎样解释一个命令名
 
-18. which
+2. which
 显示会执行哪个可执行程序，只对可执行程序的指令有效
 
-19. man/info
+3. man/info
 显示命令手册页
 
-20. apropos
+4. apropos
 显示一系列合适的命令
 
-21. whatis
+5. whatis
 显示一个命令的简洁描述
 
-22. alias
+6. alias
 创建命令别名
 
 ####7 重定向
@@ -114,11 +114,11 @@ shell函数<br/>
 标准输出<br/>		>
 标准错误<br/>		&>     2>&1
 
-23. 管道线|
+1. 管道线|
 command1|command2<br/>
 command1输出作为command2的输入<br/>
 
-24. 过滤器
+2. 过滤器
 sort 排序<br/>
 uniq 去掉重复内容<br/>
 wc 打印行、字和字节数<br/>
@@ -128,13 +128,13 @@ tail 打印文件结尾部分<br/>
 tee 从stdin读取数据，同时输出到stdout和文件<br/>
 
 ####9 键盘高级操作技巧
-25. clear
+1. clear
 清空屏幕
 
-26. history
+2. history
 显示历史命令列表内容
 
-27. tab键
+3. tab键
 文件目录名，命令名自动补全
 
 ####10 权限
