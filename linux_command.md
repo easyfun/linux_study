@@ -141,20 +141,42 @@ tee 从stdin读取数据，同时输出到stdout和文件<br/>
 1. id
 显示用户身份号
 
+/etc/passwd文件保存账号信息<br/>
+/etc/group文件保存群组信息<br/>
+/etc/shadow文件报错账号密码信息<br/>
+
 2. chmod
 更改文件模式
+
+只有文件的所有者和超级用户才能改文件、目录的模式
 
 3. umask
 设置默认的文件权限
 
+使用八进制表示，从文件模式属性中删除一个位掩码<br/>
+xxxx<br/>
+特殊权限-owner-group-other<br/>
+
 4. su
-以另一个用户的身份来执行shell
+以另一个用户的身份来执行shell<br/>
+_注意：_启动一个新的shell，并加载新用户的shell运行环境，原先的shell还存在<br/>
+
+su -l [user]<br/>
+su -c 'command'<br/>
+
 
 5. sudo
-以另一个用户的身份来执行命令
+以另一个用户的身份来执行命令<br/>
+
+_注意：_不会启动新的shell，也不会加载新用户的shell运行环境<br/>
+验证的密码不是超级用户的密码，而是当前会话用户的密码<br/>
+
 
 6. chown
-更改文件的拥有者（所有者）
+更改文件的拥有者（所有者）、用户组（群组）<br/>
+
+chown [user][:[group]] file...
+
 
 7. chgrp
 更改文件的群组
