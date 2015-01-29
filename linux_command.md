@@ -185,3 +185,36 @@ chown [user][:[group]] file...
 更改用户密码
 
 
+####11 进程
+1. ps<br/>
+报告当前进程快照<br/>
+
+ps         列出与当前终端会话相关的进程运行信息<br/>
+ps x       显示所有进程运行信息<br/>
+ps aux     BSD风格显示所有进程运行信息<br/>
+
+2. top<br/>
+显示任务，定时刷新<br/>
+
+3. jobs<br/>
+列出活跃的任务<br/>
+
+Ctrl+c   可以关闭在shell中的大部分进程<br/>
+
+4. bg<br/>
+把一个任务放到后台执行<br/>
+
+command &   工作控制，在shell起后台进程<br/>
+jobs        列出从shell启动的进程清单<br/>
+
+5. fg<br/>
+把一个任务放到前台执行<br/>
+
+6. kill<br/>
+给一个进程发送信号<br/>
+
+7. killall<br/>
+杀死指定名字的进程<br/>
+
+8. shutdown<br/>
+关机或重启系统<br/>
