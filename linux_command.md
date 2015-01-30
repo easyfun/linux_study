@@ -207,14 +207,35 @@ Ctrl+c   可以关闭在shell中的大部分进程<br/>
 command &   工作控制，在shell起后台进程<br/>
 jobs        列出从shell启动的进程清单<br/>
 
+Ctrl+z      stop挂起shell中当前前台进程，不是杀进程<br/>
+bg %jobspec 在后台唤醒挂起的进程<br/>
+
 5. fg<br/>
 把一个任务放到前台执行<br/>
 
+fg %jobspec<br/>
+
 6. kill<br/>
 给一个进程发送信号<br/>
+kill [-signal] PID<br/>
+
+Ctrl+c       INT(中断)信号<br/>
+Ctrl+z       TSTP(终端停止)信号<br/>
 
 7. killall<br/>
 杀死指定名字的进程<br/>
 
+kill [-user] [-sginal] name<br/>
+
 8. shutdown<br/>
 关机或重启系统<br/>
+
+9. pstree<br/>
+输出一颗进程树，展示进程间的父子关系<br/>
+
+10. vmstat<br/>
+输出系统资源快照
+
+vmstat time 定时刷新系统资源快照
+
+11. xload,tload
