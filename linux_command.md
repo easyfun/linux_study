@@ -239,3 +239,66 @@ kill [-user] [-sginal] name<br/>
 vmstat time 定时刷新系统资源快照
 
 11. xload,tload
+
+
+####12 shell环境
+shell变量<br/>
+环境变量<br/>
+
+1. printenv<br/>
+打印部分或全部环境变量，只显示环境变量<br/>
+
+2. set<br/>
+设置shell选项，可以查看环境变量和shell变量<br/>
+
+echo<br/>
+echo &VARIRY<br/>
+
+3. export<br/>
+导出环境变量，让随后执行的程序知道<br/>
+
+4. alias<br/>
+创建命令别名<br/>
+
+5. shell会话类型<br/>
+两种shell坏话类型：<br/>
+登录shell会话，shell，虚拟终端<br/>
+非登录shell会话，GUI模式<br/>
+
+
+####13 vi简介<br/>
+普通模式（命令模式）<br/>
+ex命令模式(普通模式下输入:)<br/>
+编辑模式<br/>
+ESC---INSERT按键（i按键）---普通模式按下:按键
+
+1. 启动<br/>
+vi options filename<br/>
+
+2. 退出<br/>
+ex命名模式<br/>
+退出  :q    <br/>
+强制退出  :q!    <br/>
+
+3. 保存<br/>
+普通模式：ZZ    <br/>
+ex命令模式：:w      另存为：:w filename
+ex命令模式：:wq     :wq filename
+
+4. 打开一行<br/>
+普通模式：o/O    <br/>
+
+5. 删除<br/>
+普通模式：x    <br/>
+
+6. 剪切<br/>
+普通模式：d    <br/>
+
+7. 复制<br/>
+普通模式：y    <br/>
+
+8. 粘贴<br/>
+普通模式：p/P    <br/>
+
+9. 连接行<br/>
+普通模式：J    <br/>
