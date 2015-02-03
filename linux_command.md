@@ -302,3 +302,174 @@ ex命令模式：:wq     :wq filename
 
 9. 连接行<br/>
 普通模式：J    <br/>
+
+
+####14. 软件包管理
+系统中一种安装和维护软件的方法。<br/>
+
+主要的包管理系统：<br/>
+.deb<br/>
+.rpm<br/>
+
+1. 包文件
+
+2. 资源库
+
+3. 依赖性
+
+4. 上层和底层软件包工具<br/>
+底层工具：安装、删除软件包文件<br/>
+上层工具：完成元数据搜索和依赖项解析<br/>
+
+发行版                     底层工具        上层工具
+Debian-Style               dpkg            apt-get,apttitude
+Fedora,RHEL,CentOS         rpm             yum
+
+package_name 软件包实际名称<br/>
+package_file 包含在软件包中的文件名<br/>
+
+
+5. 查找资源库中的软件包
+上层工具命令<br/>
+风格        命令
+Debian      apt-get update;apt-cache search search_string
+RHEL        yum search search_string
+
+6. 从资源库中安装一个软件包
+上层工具命令<br/>
+风格        命令
+Debian      apt-get update;apt-cache install package_name
+RHEL        yum install package_name
+
+7. 通过软件包文件来安装软件
+获取到软件包文件，用底层工具安装，没有依赖解析，安装中rpm发现缺少依赖，会报错退出<br/>
+底层工具命令<br/.
+风格        命令
+Debian      dpkg --install package_file
+RHEL        rpm -i package_file
+
+8. 卸载软件
+可以用底层工具和上层工具
+
+上层工具命令<br/>
+风格        命令
+Debian      apt-get remove package_name
+RHEL        yum erase package_name
+
+9. 通过资源库更新软件包
+上层工具命令<br/>
+风格        命令
+Debian      apt-get update;apt-get upgrade
+RHEL        yum update
+
+10. 通过软件包文件更新软件
+风格        命令
+Debian      dpkg --install package_file
+RHEL        rpm -U package_file
+
+11. 列出所安装的软件包
+底层工具命令<br/>
+风格        命令
+Debian      dpkg --list
+RHEL        rpm -qa
+
+12. 确认是否安装了一个软件
+底层工具命令<br/>
+风格        命令
+Debian      dpkg --status package_name
+RHEL        rpm -q package_name
+
+13. 显示所安装软件包的信息
+上层工具命令<br/>
+风格        命令
+Debian      apt-cache show package_name
+RHEL        yum info package_name
+
+14. 查找安装某个文件的软件包
+底层工具命令<br/>
+风格        命令
+Debian      dpkg --search file_name
+RHEL        rpm -qf file_name
+
+
+####16 存储媒介
+
+1. mount<br/>
+挂载一个文件系统<br/>
+
+2. umount<br/>
+卸载一个文件系统<br/>
+
+3. fsck<br/>
+检查和修复一个文件系统<br/>
+
+4. fdisk<br/>
+分区表控制器<br/>
+
+5. mkfs<br/>
+创建文件系统<br/>
+
+6. fdformat<br/>
+格式化一张软盘<br/>
+
+7. dd<br/>
+把面向块的数据直接写入设备<br/>
+
+8. genisoimage(mkisofs)<br/>
+创建一个ISO 9660的映像文件<br/>
+
+9. wodim(cdrecord)<br/>
+把数据写入光存储介质<br/>
+
+10. md5sum<br/>
+计算MD5校验码<br/>
+
+
+####17 网络系统
+1. ping<br/>
+发送ICMP ECHO_REQUEST数据包到网络主机<br/>
+
+2. traceroute<br/>
+打印到一台网络主机的路由数据包<br/>
+
+3. netstat<br/>
+打印网络连接，路由表，接口统计数据，伪装连接，多路广播成员。<br/>
+
+netstat -ie<br/>
+查看系统中的网络接口<br/>
+因特网接口eth0<br/>
+内部回环网络接口lo<br/>
+
+netstat -r<br/>
+查看路由表<br/>
+
+4. ftp<br/>
+因特网文件传输程序<br/>
+客户端程序<br/>
+
+第一步：启动ftp应用
+第二步：登录（user，password)
+第三步：进入远端目录
+第四步：切换本地目标目录
+第五步：下载
+第六步：退出
+
+lftp
+ftp客户端程序<br/>
+
+5. wget<br/>
+非交互式网络下载器<br/>
+
+6. ssh<br/>
+OpenSSH SSH 客户端（远程登录程序）<br/>
+
+
+####18 查找文件
+
+
+
+
+
+
+
+
