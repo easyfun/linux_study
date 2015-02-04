@@ -465,9 +465,82 @@ OpenSSH SSH 客户端（远程登录程序）<br/>
 
 
 ####18 查找文件
+1. locate<br/>
+通过名字查找文件<br/>
+在路径名数据库中查找，速度快。路径名数据库，不是实时更新，可能找不到<br/>
+locate数据库由updatedb程序创建更新<br/>
+
+2. find<br/>
+在目录层次结构中搜索文件<br/>
+
+3. xargs<br/>
+从标准输入生成和执行命令<br/>
+
+4. touch<br/>
+更改文件时间，创建空文本文件<br/>
+
+5. stat<br/>
+显示文件或文件系统状态<br/>
 
 
+####19 归档和备份
+压缩算法分为两大类：<br/>
+无损压缩，解压的文件与原始文件一样<br/>
+有损压缩，解压出的文件与原始文件有区别<br/>
 
+1. gzip<br/>
+压缩或者展开文件<br/>
+文件扩展名.gz<br/>
+
+gunzip    解压<br/>
+
+2. bzip2<br/>
+块排序文件压缩器<br/>
+文件扩展名.bz2<br/>
+相比gzip，bzip2舍弃了速度，压缩级别更高<br/>
+
+3. tar<br/>
+磁带打包工具<br/>
+
+.tar文件，普通的tar包<br/>
+.tgz文件，经gzip压缩过的tar包<br/>
+
+常用模式:<br/>
+c    创建归档文件<br/>
+x    抽取归档文件<br/>
+r    追加具体的路径到归档文件的末尾<br/>
+t    列出归档文件的内容<br/>
+z    使用gzip压缩包<br/>
+j    使用bzip2压缩包<br/>
+
+tar cf file.tar file<br/>
+tar tf file.tar<br/>
+tar xf file.tar<br/>
+
+4. zip<br/>
+打包和压缩文件<br/>
+
+unzip    解压zip包<br/>
+
+
+5. rsync<br/>
+同步远端文件和目录<br/>
+
+小结：<br/>
+压缩，解压单个文件：<br/>
+gzip,bzip2独立的单个文件<br/>
+
+打包多个文件：<br/>
+tar,zip<br/>
+
+常用排名：<br/>
+gzip<br/>
+bzip2<br/>
+tar<br/>
+zip<br/>
+
+
+####21    文本处理
 
 
 
