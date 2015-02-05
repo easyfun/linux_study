@@ -499,6 +499,8 @@ gunzip    解压<br/>
 文件扩展名.bz2<br/>
 相比gzip，bzip2舍弃了速度，压缩级别更高<br/>
 
+bunzip2,bzcat    解压<br/>
+
 3. tar<br/>
 磁带打包工具<br/>
 
@@ -541,6 +543,87 @@ zip<br/>
 
 
 ####21    文本处理
+unix行结束，\n    <br/>
+MS-DOS行结束，\r\n    <br/>
+dos2unix<br/>
+unix2dos<br/>
+
+1. cat<br/>
+连接文件并且打印到标准输出<br/>
+
+-A    显示非打印字符<br/>
+-n    显示行号<br/>
+-s    禁止输出多个空白行<br/>
+
+2. sort<br/>
+给文本行排序<br/>
+
+3. uniq<br/>
+报告或者省略重复行<br/>
+
+4. cut<br/>
+从每行中删除文本区域<br/>
+
+5. paste<br/>
+合并文件文本行<br/>
+
+6. join<br/>
+基于某个共享字段来联合两个文件的文本行<br/>
+
+7. comm<br/>
+逐行比较两个有序的文件<br/>
+
+8. diff<br/>
+逐行比较文件<br/>
+
+-c    上下文模式<br/>
+-u    统一模式<br/>
+
+9. patch<br/>
+给原始文件打补丁<br/>
+
+制作发布diff文件<br/>
+diff -Naur old_file new_file > diff_file<br/>
+更新文件<br/>
+patch < diff_file<br/>
+
+10. tr<br/>
+翻译或删除字符<br/>
+
+11. sed<br/>
+用于筛选和转换文本的流编辑器<br/>
+
+12. aspell<br/>
+交互式拼写检查器<br/>
+
+
+####22 格式化输出
+1. nl<br/>
+添加行号<br/>
+
+2. fold<br/>
+限制文件列宽<br/>
+
+3. fmt<br/>
+一个简单的文本格式转换器<br/>
+
+4. pr<br/>
+让文本为打印做好准备<br/>
+
+5. printf<br/>
+格式化数据并打印出来<br/>
+
+6. groff<br/>
+一个文件格式系统<br/>
+
+####24 编译程序
+1. make<br/>
+维护程序的工具<br/>
+
+
+
+
+
 
 
 
