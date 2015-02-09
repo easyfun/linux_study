@@ -184,6 +184,9 @@ chown [user][:[group]] file...
 8. passwd
 更改用户密码
 
+9. groups<br/>
+查看账号所属的群组<br/>
+
 
 ####11 进程
 1. ps<br/>
