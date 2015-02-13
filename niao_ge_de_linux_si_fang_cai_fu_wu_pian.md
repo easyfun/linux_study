@@ -265,6 +265,99 @@ LAN local area network<br/>
 使用NAT服务器<br/>
 
 ###第4章 连上Internet
+4.1Linux连上Internet前的注意事项<br/>
+4.1.1Linux的网卡<br/>
+
+4.1.2编译网卡驱动程序<br/>
+1.解压缩与编译<br/>
+2.模块的测试与处理<br/>
+3.设置开机自动启动网卡模块<br/>
+
+4.1.3Linux网络相关设置文件<br/>
+系统开机会读取网络配置文件，初始话化网络相关的参数<br/>
+
+1.与网络相关的文件<br/>
+（1）/etc/sysconfig/network<br/>
+设置主机名称，自动启动Network<br/>
+
+（2）/etc/sysconfig/network-scripts/ifcfg-eth0<br/>
+设置网卡参数的文件（IP，Network，Netmask，Broadcast，Gateway，IP取得方式）<br/>
+
+（3）/etc/modprobe.conf<br/>
+
+（4）/etc/resolv.conf和/etc/hosts<br/>
+DNS服务相关<br/>
+
+（5）/etc/services<br/>
+记录TCP/IP上的所有协议<br/>
+
+（6）/etc/protocols<br/>
+定义IP数据包协议相关的数据<br/>
+
+
+2.与网络相关的启动指令<br/>
+（1）/etc/init.d/network restart<br/>
+script文件。重启网络参数，重新加载网络配置文件初始话网络参数<br/>
+
+（2）ifup eth0（ifdown eth0）<br/>
+script文件。启用，关闭网络接口<br/>
+
+4.2连上Internet的方法<br/>
+4.2.1固定IP上网方式<br/>
+4.2.2可自动取得IP的环境<br/>
+4.2.3ADSL拨号连接上网<br/>
+
+4.3无线网络<br/>
+
+###第5章 Linux常用的网络命令
+ifconfig 查询、设置网卡与IP网段等参数，热设置不会修改网络配置文件<br/>
+ifup、ifdown 两个脚本文件。启动、关闭网络接口，不会改变网络配置文件<br/>
+Route 查询、设置路由表<br/>
+ip 复合式命令，可以直接修改上述命令提到的功能<br/>
+
+ip指令功能很强大<br/>
+ip [option] [操作] [命令]<br/>
+参数：<br/>
+option -s 显示统计信息<br/>
+操作<br/>
+    link  关于设备的相关设置，包括MTU、MAC地址，链路层参数<br/>
+    address 关于IP网络参数设置，包括IP，Network，Netmask，Broadcast等，网络层参数<br/>
+    route 与路由有关的设置<br/>
+
+iwlist，iwconfig<br/>
+无线网络使用的指令<br/>
+
+dhClient<br/>
+使用DHCP获取IP网络参数<br/>
+
+5.2网络侦错与观察指令<br/>
+ICMP两类报文 差错报告报文和询问报文<br/>
+差错报告报文 终点不可达，源点抑制，时间超过，参数问题，改变路由<br/>
+询问报文 回送请求或问答，时间戳请求或问答<br/>
+
+网络中的节点在收到数据包（不局限于ICMP询问报文）时，如果发现错误，会主动给源主机发送ICMP差错报告报文<br/>
+ping指令使用ICMP回送请求和回送回答报文，应用层直接使用网络层ICMP协议<br/>
+
+traceroute 主要利用IP包头的TTL字段，数据包是无法交付的UDP数据包（端口号非法）<br/>
+
+ip数据报的格式 122
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
