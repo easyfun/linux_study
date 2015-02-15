@@ -331,22 +331,114 @@ dhClient<br/>
 使用DHCP获取IP网络参数<br/>
 
 5.2网络侦错与观察指令<br/>
+ping<br/>
+traceroute<br/>
+netstat<br/>
+host<br/>
+nslookup 建议使用dig<br/>
+
 ICMP两类报文 差错报告报文和询问报文<br/>
 差错报告报文 终点不可达，源点抑制，时间超过，参数问题，改变路由<br/>
 询问报文 回送请求或问答，时间戳请求或问答<br/>
 
+5.2.1ping<br/>
+检测两台主机间的网络是否是通的<br/>
 网络中的节点在收到数据包（不局限于ICMP询问报文）时，如果发现错误，会主动给源主机发送ICMP差错报告报文<br/>
-ping指令使用ICMP回送请求和回送回答报文，应用层直接使用网络层ICMP协议<br/>
+ping指令使用ICMP回送请求和回送回答报文，应用层直接使用网络层ICMP协议,通过IP包发送ICMP包<br/>
 
+5.2.2tracetoute<br/>
+检测两台主机间的路由<br/>
 traceroute 主要利用IP包头的TTL字段，数据包是无法交付的UDP数据包（端口号非法）<br/>
 
-ip数据报的格式 122
+5.2.3netstat<br/>
+检测主机的联机状态<br/>
+netstat -[rn]    <==与路由有关的参数<br/>
+netstat -[antulpc]   <==与网络接口有关的参数<br/>
 
+stat连接状态<br/>
+ESTABLISED：已建立连接的状态<br/>
+SYN_SENT：发出主动连接（SYN标志）的连接数据包<br/>
+SYN_RECV：接收到一个要求连接的数据包<br/>
+FIN_WAIT1：该连接正在断开连接<br/>
+FIN_WAIT2：该连接已挂断，但正在等待对方主机响应断线确认的数据包<br/>
+TIME_WAIT：该连接已挂断，但socket还在网络上等待结束<br/>
+LISTEN：通常用在服务的监听port<br/>
 
+5.2.4 host<br/>
+通过主机名查找IP<br/>
 
+5.2.5 nslookup<br/>
+通过主机名查找IP，通过IP查找主机名<br/>
 
+5.3远程联机命令<br/>
+远程联机 在不同的计算机之间登录<br/>
 
+5.3.1 Telnet<br/>
+telnet [host|IP] [port]<br/>
 
+5.3.2 FTP<br/>
+5.3.3 LFTP<br/>
+FTP客户端<br/>
+
+5.4文本网页浏览<br/>
+5.4.1 lync<br/>
+文字接口模式下的“浏览器”<br/>
+
+5.4.2 wget<br/>
+文字接口模式下的下载工具<br/>
+
+5.5 数据包捕获功能<br/>
+5.5.1 tcpdump<br/>
+数据包分析工具<br/>
+
+5.5.2 ethereal<br/>
+网络流量分析工具<br/>
+有文本界面和图形界面<br/>
+
+5.5.3 nc、netcat<br/>
+服务检测，针对port<br/>
+
+###第6章 Linux网络侦听<br/>5.5.1 tcpdump<br/>
+数据包分析工具<br/>
+
+5.5.2 ethereal<br/>
+网络流量分析工具<br/>
+有文本界面和图形界面<br/>
+
+5.5.3 nc、netcat<br/>
+服务检测，针对port<br/>
+
+###第6章 Linux网络侦听<br/>5.5.1 tcpdump<br/>
+数据包分析工具<br/>
+
+5.5.2 ethereal<br/>
+网络流量分析工具<br/>
+有文本界面和图形界面<br/>
+
+5.5.3 nc、netcat<br/>
+服务检测，针对port<br/>
+
+###第6章 Linux网络侦听<br/>5.5.1 tcpdump<br/>
+数据包分析工具<br/>
+
+5.5.2 ethereal<br/>
+网络流量分析工具<br/>
+有文本界面和图形界面<br/>
+
+5.5.3 nc、netcat<br/>
+服务检测，针对port<br/>
+
+###第6章 Linux网络侦听<br/>5.5.1 tcpdump<br/>
+数据包分析工具<br/>
+
+5.5.2 ethereal<br/>
+网络流量分析工具<br/>
+有文本界面和图形界面<br/>
+
+5.5.3 nc、netcat<br/>
+服务检测，针对port<br/>
+
+###第6章 Linux网络侦听<br/>
 
 
 
