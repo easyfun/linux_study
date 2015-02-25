@@ -398,47 +398,65 @@ FTP客户端<br/>
 5.5.3 nc、netcat<br/>
 服务检测，针对port<br/>
 
-###第6章 Linux网络侦听<br/>5.5.1 tcpdump<br/>
-数据包分析工具<br/>
+###第6章 Linux网络侦错<br/>
 
-5.5.2 ethereal<br/>
-网络流量分析工具<br/>
-有文本界面和图形界面<br/>
+###第10章 认识网络安全<br/>
+10.1网络数据包进入主机的流程<br/>
+10.1.1数据包进入主机的流程<br/>
+1.数据包过滤防火墙：IP Filtering或Net Filter<br/>
+iptabels软件提供的防火墙功能<br/>
 
-5.5.3 nc、netcat<br/>
-服务检测，针对port<br/>
+2.第二层防火墙：TCP Warppers<br/>
 
-###第6章 Linux网络侦听<br/>5.5.1 tcpdump<br/>
-数据包分析工具<br/>
+3.服务（daemon）的功能<br/>
 
-5.5.2 ethereal<br/>
-网络流量分析工具<br/>
-有文本界面和图形界面<br/>
+4.使用主机的文件系统资源<br/>
+通过操作系统内核调用<br/>
 
-5.5.3 nc、netcat<br/>
-服务检测，针对port<br/>
+10.1.2主机能做的保护：权限设置、软件更新、SELinux<br/>
+1.权限的重要性<br/>
+2.严格保证密码的复杂性<br/>
+3.软件更新的重要性<br/>
 
-###第6章 Linux网络侦听<br/>5.5.1 tcpdump<br/>
-数据包分析工具<br/>
+4.SELinux<br/>
+内核模块，针对文件系统权限作更细部规划的模块，不是防火墙软件<br/>
 
-5.5.2 ethereal<br/>
-网络流量分析工具<br/>
-有文本界面和图形界面<br/>
+10.3 常见攻击手段与主机保护方式<br/>
+1.取得账号信息猜密码<br/>
+2.利用系统的程序漏洞主动攻击<br/>
+3.利用社交工具欺骗<br/>
+4.利用程序功能的被动攻击<br/>
+5.蠕虫或木马的rootkit<br/>
 
-5.5.3 nc、netcat<br/>
-服务检测，针对port<br/>
+6.DoS攻击(Denial of Service)<br/>
+Client向Server发送SYN数据包请求建立连接，Server会送ACK/SYN数据包，Client丢弃这个数据包，让Server空等，Server占用一个Port。DoS攻击会耗尽主机系统的Port，是主机网络功能瘫痪。在内网中，可使整个网络瘫痪。
+应对方式：系统内核自动抵挡DoS攻击<br/>
+          侦测软件防御<br/>
 
-###第6章 Linux网络侦听<br/>5.5.1 tcpdump<br/>
-数据包分析工具<br/>
+7.其它<br/>
+数据包内部信息替换，ip，tcp头部信息替换。<br/>
 
-5.5.2 ethereal<br/>
-网络流量分析工具<br/>
-有文本界面和图形界面<br/>
+10.4被入侵后的修复工作<br/>
+10.4.1网管人员必备技巧与任务<br/>
 
-5.5.3 nc、netcat<br/>
-服务检测，针对port<br/>
+10.4.2入侵恢复工作<br/>
+1.立即拔除网线<br/>
 
-###第6章 Linux网络侦听<br/>
+2.分析日志文件信息，搜索可能的入侵途径<br/>
+分析日志文件：/var/log/messages，/var/log/secure文件，last指令查看登录主机的账号信息<br/>
+检查主机开放的服务：
+
+3.重要数据备份<br/>
+
+4.重装系统<br/>
+
+5.软件的漏洞修补<br/>
+
+6.关闭或移除不需要的服务<br/>
+
+7.数据恢复与恢复服务设置<br/>
+
+8.连上Internet<br/>
 
 
 
