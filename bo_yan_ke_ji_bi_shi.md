@@ -9,7 +9,7 @@
     	int nLenSubstr=strlen(pszSubstr);
     
     	int nFindPos=-1;
-    	char *pszTemp=new char[nLenSubstr+1];// 问题new的内存后边没有清理
+    	char *pszTemp=new char[nLenSubstr+1];// 问题new的内存后边没有清理，内存泄漏，最好用内存管理器
     	pszTemp[nLenSubstr]=0;
     	for (int i=0;i<nLenSrc;i++)
     	{
@@ -70,3 +70,11 @@
 2.合并两个单向递增链表<br/>
 借助std::list<br/>
 用C实现链表，比较繁琐<br/>
+
+
+小结：<br/>
+思维务必严谨。<br/>
+1.包含头文件<br/>
+2.避免内存泄漏new<br/>
+3.避免越界访问memcpy<br/>
+4.尽量使用stl，boost，或者其它好的库库<br/>
