@@ -62,7 +62,7 @@
 
 		#include <string>
 		using namespace std;
-
+		
 	    int find_substr(const char *pszSrc, const char *pszSubstr)
 	    {
 			std::string str_src=pszSrc;
