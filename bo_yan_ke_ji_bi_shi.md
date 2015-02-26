@@ -1,7 +1,8 @@
 2015年2月26日C/C++笔试总结<br/>
 
 1.从一个字符串中查找一个子串<br/>
-我的答题：
+我的答题：<br/>
+
     // 缺少头文件包含
     int find_substr(const char *pszSrc, const char *pszSubstr)
     {
@@ -26,35 +27,36 @@
 
 修正<br/>
 解法1<br/>
-    #include <string.h>
-    int find_substr(const char *pszSrc, const char *pszSubstr)
-    {
-    	int nLenSrc=strlen(pszSrc);
-    	int nLenSubstr=strlen(pszSubstr);
-    
-	    if (nLenSubstr > nLenSrc)
-    		return -1;
-    
-	    int nFindPos=-1;
-    	char *pszTemp=new char[nLenSubstr+1];
-	    pszTemp[nLenSubstr]=0;
-    	for (int i=0;i<nLenSrc;i++)
-	    {
-    		memcpy(pszTemp,pszSrc+i,nLenSubstr);
-    		if (0==strcmp(pszTemp,pszSubstr))
-    		{
-	    		nFindPos=i;
-		    	break;
-    		}
-    
-	    	if (nLenSrc-i == nLenSubstr)
-		        break;
-    	}
 
-    	delete[] pszTemp;
-    	pszTemp=NULL;
-	    return nFindPos;
-    }
+	    #include <string.h>
+	    int find_substr(const char *pszSrc, const char *pszSubstr)
+	    {
+    		int nLenSrc=strlen(pszSrc);
+	    	int nLenSubstr=strlen(pszSubstr);
+    		
+		    if (nLenSubstr > nLenSrc)
+    			return -1;
+		    
+		    int nFindPos=-1;
+    		char *pszTemp=new char[nLenSubstr+1];
+		    pszTemp[nLenSubstr]=0;
+	    	for (int i=0;i<nLenSrc;i++)
+		    {
+	    		memcpy(pszTemp,pszSrc+i,nLenSubstr);
+    			if (0==strcmp(pszTemp,pszSubstr))
+    			{
+	    			nFindPos=i;
+		    		break;
+	    		}
+    			
+		    	if (nLenSrc-i == nLenSubstr)
+			        break;
+    		}
+
+	    	delete[] pszTemp;
+    		pszTemp=NULL;
+	    	return nFindPos;
+	    }
 
 解法2<br/>
 	#include <string>
