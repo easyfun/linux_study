@@ -40,7 +40,7 @@
 		    int nFindPos=-1;
     		char *pszTemp=new char[nLenSubstr+1];
 		    pszTemp[nLenSubstr]=0;
-	    	for (int i=0;i<nLenSrc;i++)
+	    	for (int i=0;i<nLenSrc-nLenSubstr+1;i++)
 		    {
 	    		memcpy(pszTemp,pszSrc+i,nLenSubstr);
     			if (0==strcmp(pszTemp,pszSubstr))
@@ -49,8 +49,8 @@
 		    		break;
 	    		}
     			
-		    	if (nLenSrc-i == nLenSubstr)
-			        break;
+		    	//if (nLenSrc-i == nLenSubstr)
+			    //    break;
     		}
 
 	    	delete[] pszTemp;

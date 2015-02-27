@@ -532,21 +532,22 @@ yum install httpd mysql-Server php php-devel php-mysql<br/>
 
 Apache命名<br/>
 主要版本 1.3.x，2.0.x，2.2.x<br/>
+最新已经到了2.4.x<br/>
 1.3.x以前称为Apache<br/>
 2.x以后称为HTTPd<br/>
 
 2.主要目录结构<br/>
 
-（1）Apache主要目录<br/>
-/etc/httpd/	  配置文件目录
-    /etc/httpd/conf/httpd.conf   主要配置文件
+（1）Apache主要文件目录<br/>
+/etc/httpd/	  配置文件目录<br/>
+    /etc/httpd/conf/httpd.conf   主要配置文件<br/>
 
-/usr/lib/httpd/modules/   模块目录
+/usr/lib/httpd/modules/   模块目录<br/>
 
-/var/www/   网站文件目录
-    /var/www/html/
-    /var/www/error/
-    /var/www/cgi-bin/
+/var/www/   网站文件目录<br/>
+    /var/www/html/<br/>
+    /var/www/error/<br/>
+    /var/www/cgi-bin/<br/>
 
 /var/log/httpd/   日志文件目录<br/>
 
@@ -554,10 +555,38 @@ Apache命名<br/>
 
 /usr/sbin/httpd   Apache二进制执行文件<br/>
 
-/usr/bin/htpasswd   Apache密码保护
+/usr/bin/htpasswd   Apache密码保护<br/>
 
 
+（2）MySQL主要文件目录<br/>
+/etc/my.cnf   MySQL的配置文件<br/>
 
+/var/lib/mysql/   MySQL数据库文件存放位置<br/>
+
+
+（3）PHP主要文件目录<br/>
+/usr/lib/httpd/modules/libphp4.so   PHP提供给Apache使用的模块<br/>
+
+/etc/httpd/conf.d/php.conf   PHP设置参数<br/>
+
+/etc/php.ini   PHP主要配置文件<br/>
+
+/etc/php.d/mysql.ini，/usr/lib/php4/mysql.so   PHP支持MySQL的文件<br/>
+
+/usr/bin/phpize，/usr/include/php/   PHP加速器软件相关<br/>
+
+
+18.3.2httpd.conf的基本设置<br/>
+1.针对主机环境的设置项目<br/>
+Apache有两种工作模式<br/>
+    prefork   单线程多进程   执行文件/usr/sbin/httpd<br/>
+    worker   多进程多线程   执行文件/usr/sbin/httpd.worker<br/>
+
+/etc/sysconfig/httpd文件指定了工作模式<br/>
+
+2.针对中文Big5编码语言<br/>
+
+3.首页权限相关设置（DocumentRoot与Directory）<br/>
 
 
 
