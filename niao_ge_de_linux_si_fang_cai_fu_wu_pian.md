@@ -589,6 +589,37 @@ Apache有两种工作模式<br/>
 3.首页权限相关设置（DocumentRoot与Directory）<br/>
 
 
+18.3.3PHP等额外配置文件<br/>
+
+
+18.3.4Apache的启动与PHP的测试<br/>
+1.传统方法<br/>
+/etc/init.d/httpd start   启动<br/>
+/etc/init.d/httpd stop   关闭<br/>
+
+2.利用脚本<br/>
+/usr/sbin/apachectl start   启动<br/>
+/usr/sbin/apachectl stop   关闭<br/>
+
+判断启动状态<br/>
+netstat -tunl|grep ':80'<br/>
+tail /var/log/httpd/error_log<br/>
+
+
+18.3.5 MySQL数据库的启动与测试<br/>
+
+
+18.4Apache服务器的进阶设置<br/>
+
+
+18.5日志文件分析及PHP强化模块等软件说明<br/>
+
+
+18.6建立SSL（HTTPs）网站<br/>
+
+
+18.7安全性管理网页<br/>
+
 
 
 
