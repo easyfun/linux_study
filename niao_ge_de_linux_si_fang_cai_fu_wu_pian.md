@@ -459,6 +459,103 @@ Client向Server发送SYN数据包请求建立连接，Server会送ACK/SYN数据�
 8.连上Internet<br/>
 
 
+###第18章 WWW服务器
+
+WEB使用HTTP协议，传送文字、图形、影像、声音等多媒体信息，通过超文本方式在Internet上传输数据<br/>
+HTTP协议 超文本传输协议<br/>
+
+1.WWW使用HTTP协议，分为服务器与客户端<br/>
+    服务器：开源 Apache，Nginx，Tomact，lighttpd；商业 Microsoft IIS，IBM WebSphere<br/>
+    客户端：Chrome，Firefox，Opera，IE，UC<br/>
+2.Apache是服务端软件，主要依据HTTPd服务器发展而来，开源软件<br/>
+3.Mozilla是一个开源软件的开发计划，firefox浏览器<br/>
+4.网页文件尽量使用W3C标准<br/>
+
+18.2.2WWW主机与浏览器所提供的资源设置<br/>
+Web服务器提供数据和文件，HTML,CSS,JavaScript等<br/>
+数据保存在服务端文件或数据库（数据库文件也保存在磁盘中）<br/>
+保存Web文件的默认目录/var/www/html/或/srv/www/ <br/>
+CentOS保存Web文件的默认目录/var/www/html/ <br/>
+
+1.URL<br/>
+<协议>://<主机地址或主机名称（域名）>[:port]/<目录资源>   <br/>
+（1）协议<br/>
+常用协议 HTTP,HTTPs,FTP,Telnet,news,gopher等<br/>
+（3）目录资源<br/>
+http://hostdomain对应/var/www/html，首页文件index.html,index.php等<br/>
+http://hostdomain/linux_basic/index.php对应/var/www/html/linux_basic/index.php <br/>
+
+2.传递数据的方法<br/>
+GET，POST，HEAD，OPTIONS，DELETE<br/>
+
+10.2.3 WWW服务器的类型<br/>
+1.主机分类<br/>
+（1）静态网站<br/>
+（2）动态网站<br/>
+Web服务器通过“网页程序语言”与代理（浏览器等）用户互动<br/>
+“网页程序语言” PHP，Python，perl，ASP，JavaScript等<br/>
+
+网页动态化 JavaScript，flash<br/>
+
+常用架构<br/>
+1.Linux+Apache+PHP+MySQL<br/>
+2.Linux+Nginx+PHP+MySQL<br/>
+3.Linux+Tomcat+MySQL<br/>
+4.Windows+IIS+ASP+MSSQL<br/>
+
+18.2.4加密的网页数据（SSL）及第三方公正单位<br/>
+HTTP协议数据明文传输，有被窃取风险<br/>
+HTTPS协议数据加密传输<br/>
+
+1.SSL（Secure Socket Layer）<br/>
+公钥加密，私钥解密<br/>
+2.CA（Certificate Authorities）<br/>
+
+18.2.5常用浏览器<br/>
+Chorme，Firefox，Opera，IE<br/>
+
+Linux下文字接口 lynx，wget<br/>
+
+18.3WWW（Apache）服务器基本设置<br/>
+
+18.3.1LAMP所需软件与其结构<br/>
+1.所需软件<br/>
+httpd<br/>
+mysql<br/>
+mysql-Server<br/>
+php<br/>
+php-devel（与PHP加速软件有关）<br/>
+php-mysql<br/>
+
+尽量使用yum安装，不用tarball（打包工具，源码安装）<br/>
+yum install httpd mysql-Server php php-devel php-mysql<br/>
+
+Apache命名<br/>
+主要版本 1.3.x，2.0.x，2.2.x<br/>
+1.3.x以前称为Apache<br/>
+2.x以后称为HTTPd<br/>
+
+2.主要目录结构<br/>
+
+（1）Apache主要目录<br/>
+/etc/httpd/	  配置文件目录
+    /etc/httpd/conf/httpd.conf   主要配置文件
+
+/usr/lib/httpd/modules/   模块目录
+
+/var/www/   网站文件目录
+    /var/www/html/
+    /var/www/error/
+    /var/www/cgi-bin/
+
+/var/log/httpd/   日志文件目录<br/>
+
+/usr/sbin/apachectl   服务执行脚本文件<br/>
+
+/usr/sbin/httpd   Apache二进制执行文件<br/>
+
+/usr/bin/htpasswd   Apache密码保护
+
 
 
 
