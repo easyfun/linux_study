@@ -25,6 +25,7 @@ STL容器
 #include<vector>
 using std::vector;
 
+
 ####vector的常用方法
 1.构造函数<br/>
 默认构造函数<br/>
@@ -48,14 +49,43 @@ using std::vector;
 大小size<br/>
 容量capacity，插入元素超出容量，会重新申请更大的内存空间，复制操作，释放之前小的内存空间<br/>
 
+扩容容量变化，使用默认构造函数实例化的vector对象，呈现指数阶增长，2的n次方；其他方式实例化的vecotr对象，未作研究<br/>
+
 6.事前预留容量<br/>
 reserve<br/>
 
 
+####list的常用用法
+特点：<br/>
+list是双向链表<br/>
+插入，删除元素的时间是固定的<br/>
 
+####头文件
+#include<vector>
 
+####实例化
+list<type> type_object;
 
+注意以下方法都是成员方法<br/>
 
+####插入
+push_front<br/>
+push_back<br/>
+insert<br/>
+
+####删除
+erase<br/>
+clear<br/>
+
+####反转
+reverse<br/>
+不影响迭代器，反转之后仍然指向原来的元素<br/>
+
+####排序
+sort<br/>
+可以指定排序方法<br/>
+
+不影响迭代器，反转之后仍然指向原来的元素<br/>
 
 
 
