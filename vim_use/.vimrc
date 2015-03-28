@@ -49,7 +49,7 @@ set nohls
 set incsearch
 
 "修改一个文件后，自动进行备份，备份的文件名为原文件名加“~“后缀
-if has("vms") //注意双引号要用半角的引号""
+if has("vms") 
 set nobackupd
 else
 set backup
