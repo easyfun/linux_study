@@ -32,6 +32,9 @@ set smartindent<br/>
 set tabstop=4<br/>
 set shiftwidth=4<br/>
 
+"把tab转换成空格<br/>
+set expandtab
+
 "设置匹配模式，类似当输入一个左括号时会匹配相应的右括号"<br/>
 set showmatch<br/>
 

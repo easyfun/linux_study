@@ -27,6 +27,9 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 
+"把tab转换成空格
+set expandtab
+
 "设置匹配模式，类似当输入一个左括号时会匹配相应的右括号
 set showmatch
 
