@@ -2,12 +2,12 @@
 
 标准模板库提供了一组模板类和函数，封装了常用的数据结构和算法<br/>
 
-STL容器
-顺序容器
+STL容器<br/>
+顺序容器<br/>
 	std::vectror<br/>
 	std::deque<br/>
 	std::list<br/>
-关联容器
+关联容器<br/>
 	std::set<br/>
 	std::multiset<br/>
 	std::map<br/>
@@ -15,15 +15,15 @@ STL容器
 
 
 ###STL动态数组
-特点：
+特点：<br/>
 	使用连续的存储空间，可以使用下标[]访问元素，大小动态的，内存自动管理<br/>
 	内部内存大小不够时，会重新申请联系内存，拷贝元素到新的内存区<br/>
 	在尾部插入，删除元素的时间是固定的，不受实际大小的影响<br/>
 	在中间插入，删除元素与其后的元素个数相关，移动其后的元素<br/>
 
 ####头文件
-#include<vector>
-using std::vector;
+    #include<vector>
+    using std::vector;
 
 
 ####vector的常用方法
@@ -61,7 +61,7 @@ list是双向链表<br/>
 插入，删除元素的时间是固定的<br/>
 
 ####头文件
-#include<vector>
+    #include<vector>
 
 ####实例化
 list<type> type_object;
@@ -105,10 +105,10 @@ sort，不指定默认递增，类型必须实现<运算符<br/>
     插入，删除元素，重新排序，引入开销<br/>
 
 ####头文件
-#include<set>   <br/>
+    #include<set>
 
 ####实例化
-set<type,sort_predicate=less<type>>     <br/>
+    set<type,sort_predicate=less<type>>
 
 ####插入
 insert()<br/>
