@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo $PWD
+ROOT_DIR=$PWD/agent/bin
+
+cd $ROOT_DIR
+./hx_im_access

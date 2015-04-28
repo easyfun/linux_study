@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo $PWD
+ROOT_PATH=$PWD
+BIN_PATH= $ROOT_PATH/agent/bin/
+BIN_NAME=hx_im_access
+
+
+#gnome-terminal -t "hx_im_access" -x bash -c "./start_hx_im_access"
+gnome-terminal -t "title" -x "./start_hx_im_access"
