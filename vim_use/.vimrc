@@ -1,3 +1,5 @@
+"中文乱码修复
+set fencs=utf-8,GB18030,ucs-bom,default,latin1
 
 "去掉有关vi一致性模式，避免以前版本的bug和局限
 set nocompatible
