@@ -149,5 +149,8 @@ Summary:
 3. 百度云盘搜索引擎
 
 
+###医药百科
+1.[脚气](http://zhidao.baidu.com/link?url=j5-no1Ee-4gfk5KJbEx_BFvATGyQ4uyU-fXqYoQGMkFGRsi6xvPGWh0UCOkvsSKIIEKehSHSRN6UIYm5G9Y3m2oBsQg2EUgoUQJ9yWFBrci)
+
 ### 好的节目
 1. 听君一席话
