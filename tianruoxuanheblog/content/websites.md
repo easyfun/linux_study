@@ -15,6 +15,7 @@ Summary:
 6. [Eclipse编辑器基本设置](http://www.cnblogs.com/decarl/archive/2012/05/15/2502084.html)
 7. [虚拟机Vmware中CentOS访问Windows中的文件教程](http://www.111cn.net/sys/CentOS/72976.htm)
 8. [鸟哥私房菜](http://linux.vbird.org)
+9. [c语言中文网](http://c.biancheng.net/cpp/)
 
 ###Go学习资料###
 1. [官方网站](https://golang.org)
