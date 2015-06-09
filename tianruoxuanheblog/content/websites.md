@@ -16,7 +16,8 @@ Summary:
 7. [虚拟机Vmware中CentOS访问Windows中的文件教程](http://www.111cn.net/sys/CentOS/72976.htm)
 8. [鸟哥私房菜](http://linux.vbird.org)
 9. [c语言中文网](http://c.biancheng.net/cpp/)
-10.[eginx学习](http://tengine.taobao.org/book/chapter_08.html)
+10.[nginx学习](http://tengine.taobao.org/book/chapter_08.html)
+11.[利用Vim打造开发环境（二）---->几个常用的插件](http://www.cnblogs.com/sld666666/archive/2010/04/10/1709142.html)
 
 ###Go学习资料###
 1. [官方网站](https://golang.org)
