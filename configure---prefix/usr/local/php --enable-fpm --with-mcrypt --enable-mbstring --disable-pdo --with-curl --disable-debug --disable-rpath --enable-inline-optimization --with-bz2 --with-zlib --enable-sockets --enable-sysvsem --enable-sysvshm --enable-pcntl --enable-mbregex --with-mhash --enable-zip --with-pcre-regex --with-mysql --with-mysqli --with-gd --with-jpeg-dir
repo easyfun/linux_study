@@ -1,0 +1,2 @@
+php5.5安装
+./configure --prefix=/usr/local/php --enable-fpm --with-mcrypt --enable-mbstring --disable-pdo --with-curl --disable-debug --disable-rpath --enable-inline-optimization --with-bz2 --with-zlib --enable-sockets --enable-sysvsem --enable-sysvshm --enable-pcntl --enable-mbregex --with-mhash --enable-zip --with-pcre-regex --with-mysql --with-mysqli --with-gd --with-jpeg-dir
