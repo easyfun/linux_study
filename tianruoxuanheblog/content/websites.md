@@ -27,7 +27,7 @@ Summary:
 4. [Golang中文社区](http://studygolang.com/)
 5. [在windows环境中配置go语言开发环境](http://www.cppblog.com/cc/archive/2013/02/07/197762.html)
 6. [Go下载地址](https://golang.org/dl/)
-
+7. [golang中国](http://golangtc.com/download#collapse0)
 
 ###Git教程###
 1. [Git教程by廖雪峰](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
