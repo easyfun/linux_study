@@ -19,6 +19,7 @@ Summary:
 10.[nginx学习](http://tengine.taobao.org/book/chapter_08.html)
 11.[利用Vim打造开发环境（二）---->几个常用的插件](http://www.cnblogs.com/sld666666/archive/2010/04/10/1709142.html)
 12.[Kerberos介绍](http://www.cnblogs.com/jankie/archive/2011/08/22/2149285.html)
+13.[linux下core文件调试](http://blog.chinaunix.net/uid-116213-id-159159.html)
 
 ###Go学习资料###
 1. [官方网站](https://golang.org)
