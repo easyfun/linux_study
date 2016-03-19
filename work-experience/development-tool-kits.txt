@@ -1,0 +1,26 @@
+软件开发
+QT + VS2010 + VS2010SP + QT-VS-addin + Visual Assistant
+
+数据库
+SQLite
+
+文本编辑
+Beyond.Compare
+Notepad++
+UltraEdit
+
+版本管理
+Subversion
+Git
+
+压缩解压缩
+7z
+
+其他
+Everything
+FileZilla
+YouDaoDict
+
+UML
+Visual Paradigm
+
